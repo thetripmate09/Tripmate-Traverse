@@ -62,8 +62,8 @@
                     <a href="#locations">Locations</a>
                     <a href="#package">Packages</a>
                     <a href="#testimonials">Testimonials</a>
-                    <a href="#about us">About Us</a>
-                    <a href="#contact us">Contact Us</a>
+                    <a href="#testimonials">About Us</a>
+                    <a href="#contactus">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -463,8 +463,6 @@ toggle.addEventListener('click', () => {
         <h3 class="text-teal-600 font-semibold">— Heenaa Khan
         </h3>
       </div>
-
-      <!-- Add remaining T3 to T16 in the same format -->
     </div>
   </div>
 </section>
@@ -486,7 +484,7 @@ toggle.addEventListener('click', () => {
 <!-- Boxicons CDN -->
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-<footer class="footer bg-teal-800 text-white">
+<footer class="footer bg-teal-800 text-white" id="contactus">
   <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-6">
 
     <!-- Brand -->
@@ -532,8 +530,55 @@ toggle.addEventListener('click', () => {
     © 2025 Tripmate Traverse. All Rights Reserved.
   </div>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('nav');
+    const navMenu = document.querySelector('.navbar');
+    const navToggle = document.querySelector('.nav-toggle');
+    let lastScroll = 0;
 
+    // Scroll event: hide navbar on scroll down
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
 
- 
+        if (currentScroll > lastScroll && currentScroll > 80) {
+            // Scrolling down → hide navbar
+            navbar.style.top = '-80px';
+
+            // Close mobile menu if open
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        } else {
+            // Scrolling up → show navbar
+            navbar.style.top = '0';
+        }
+
+        lastScroll = currentScroll;
+    });
+
+    // Close mobile menu when clicking a link
+    const navLinks = document.querySelectorAll('.navbar li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        });
+    });
+
+    // Optional: reset navbar on resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navbar.style.top = '0';
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        }
+    });
+});
+</script>
+
 </body>
 </html>

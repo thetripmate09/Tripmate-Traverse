@@ -52,6 +52,7 @@
 nav {
     width: 100%;
     position: fixed;
+    transition: right 0.3s ease, opacity 0.3s ease;
     top: 0;
     left: 0;
     background-color: rgba(15, 20, 25, 0.5); /* semi-transparent dark */
@@ -63,6 +64,7 @@ nav {
     padding: 1rem 5%;
     z-index: 999;
 }
+
 
 /* Hamburger icon container */
 .nav-toggle {
