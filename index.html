@@ -51,7 +51,11 @@
     <div class="content" id="home"> 
         <nav>
             <img src="./files/logo.jpg" class="logo" alt="Logo" title="Tripmate  Traverse">
-            
+            <div class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <ul class="navbar">
                 <li>
                     <a href="#home">Home</a>
@@ -71,7 +75,18 @@
         </div>
         </div>
     </div>
+  <script>
+  const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.navbar');
 
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  toggle.classList.toggle('active');
+});
+</script>
+
+    
+    
 <!-- Departing Soon Section -->
 <section class="bg-gray-50 py-12 pt-20" id="departing">
   <div class="text-center mb-16">
