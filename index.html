@@ -97,11 +97,13 @@ toggle.addEventListener('click', () => {
   <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 px-5">
     <!-- Card 1 -->
     <a href="#" class="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <span class="card-tag">Hot Deal</span>
       <img src="./files/A1.jpg" alt="Upcoming Trip 1" class="w-full h-full object-cover">
     </a>
 
     <!-- Card 2 -->
     <a href="#" class="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <span class="card-tag">Limited Spots</span>
       <img src="./files/A2.jpg" alt="Upcoming Trip 2" class="w-full h-full object-cover">
     </a>
   </div>
@@ -472,7 +474,7 @@ toggle.addEventListener('click', () => {
 #testimonial-track {
   display: flex;
   gap: 2rem;
-  animation: slide 25s linear infinite; /* faster scroll */
+  animation: slide 5s linear infinite; /* faster scroll */
 }
 
 @keyframes slide {

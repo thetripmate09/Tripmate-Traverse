@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url("files/bgi.png") center center / cover no-repeat;
 }
 
 .banner video{
@@ -833,4 +834,207 @@ nav ul li a{
 .stars i{
     font-size: 20px;
     color: rgb(197, 167, 44);
+}
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  #departing .max-w-5xl {
+    grid-template-columns: 1fr; /* single column for mobile */
+    gap: 1rem;                  /* reduce gap */
+    padding: 0 1.5rem;          /* adjust padding */
+  }
+
+  #departing h2 {
+    font-size: 2rem;           /* smaller headline */
+  }
+
+  #departing p {
+    font-size: 1rem;           /* smaller subtext */
+  }
+
+  #departing a {
+    height: auto;
+    max-height: 250px;         /* keep cards shorter */
+  }
+
+  #departing img {
+    height: 100%;               /* scale to card height */
+    width: 100%;
+    object-fit: cover;          /* ensures images cover card */
+    border-radius: 1.5rem;      /* rounded corners for cards */
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 640px) {
+  .title {
+    margin-top: 20vh;      /* reduce top margin for mobile */
+    text-align: center;    /* center everything */
+    padding: 0 1rem;       /* add side padding */
+  }
+
+  .title h1 {
+    font-size: 5vw;        /* scale heading dynamically */
+    line-height: 1.2;
+  }
+
+  .title p {
+    font-size: 3.5vw;      /* smaller, readable paragraph */
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
+
+  .title .button {
+    font-size: 4vw;        /* smaller button text */
+    padding: 0.8rem 2rem;  /* adjust padding */
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Locations Grid */
+  .max-w-7xl {
+    padding: 0 15px;       /* reduce side padding */
+  }
+
+  .location-card {
+    width: 100%;            /* full width of container */
+    margin-bottom: 20px;    /* space between cards */
+  }
+
+  .location-card img {
+    width: 100%;            /* full width image */
+    height: auto;           /* keep aspect ratio */
+    border-radius: 20px;    /* softer corners */
+  }
+
+  .location-card h3 {
+    font-size: 20px;        /* smaller heading */
+  }
+
+  .location-card p {
+    font-size: 14px;        /* smaller description */
+  }
+}
+@media (max-width: 640px) {
+  /* Packages Section */
+  #package .max-w-7xl {
+    padding: 0 15px;       /* reduce side padding */
+  }
+
+  .package-card {
+    width: 100%;            /* full width of container */
+    margin-bottom: 20px;    /* spacing between cards */
+    border-radius: 20px;    /* softer corners */
+  }
+
+  .package-card img {
+    width: 100%;            /* full width image */
+    height: auto;           /* maintain aspect ratio */
+    border-radius: 20px;
+  }
+}
+@media (max-width: 640px) {
+  /* Stack cards vertically with spacing */
+  .max-w-6xl {
+    padding: 0 15px;
+  }
+
+  .max-w-6xl > div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Card image full-width but smaller height */
+  .max-w-6xl img {
+    width: 100%;
+    height: auto;      /* keeps full width and aspect ratio */
+    max-height: 180px; /* limits vertical space */
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  /* Card headings */
+  .max-w-6xl h4 {
+    font-size: 1.25rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+
+  /* Card text */
+  .max-w-6xl p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  /* Optional: reduce card padding */
+  .max-w-6xl > div .p-6 {
+    padding: 10px 12px;
+  }
+}
+.card-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fc0050; /* bright pink/red */
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 5px 12px;
+  border-radius: 12px;
+  z-index: 10;
+  text-transform: uppercase;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 50vh; /* shorter for mobile */
+        overflow: hidden;
+        position: relative;
+    }
+
+    .banner video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: 120%; 
+        min-width: 100%; 
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center top;
+        z-index: 0;
+    }
+
+    /* Center content properly */
+    .banner .title {
+        position: relative; /* overlay on video */
+        top: 35%;           /* vertical center */
+        left: 50%;          /* horizontal center */
+        transform: translate(-50%, -50%); /* center exactly */
+        z-index: 1;
+        text-align: center;
+        width: 90%;         /* responsive width */
+        color: white;
+        padding: 0 1rem;
+    }
+
+    .banner .title h1 {
+        font-size: 7vw;
+        line-height: 1.2;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        margin-bottom: 0.5rem;
+    }
+
+    .banner .title p {
+        font-size: 4vw;
+        margin-bottom: 1rem;
+    }
+
+    .banner .title .button {
+        font-size: 4vw;
+        padding: 0.5rem 1.5rem;
+        border-radius: 12px;
+    }
 }
