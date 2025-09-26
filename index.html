@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripmate  Traverse</title>
+    <link rel="icon" href="./files/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services with Pictures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        .container-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .container-box h4, .container-box p {
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Background Video & Header -->
+
+    <div class="banner">
+        <video src="./files/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+    
+    <!-- Header -->
+
+    <div class="content" id="home"> 
+        <nav>
+            <img src="./files/logo.jpg" class="logo" alt="Logo" title="Tripmate  Traverse">
+            
+            <ul class="navbar">
+                <li>
+                    <a href="#home">Home</a>
+                    <a href="#locations">Locations</a>
+                    <a href="#package">Packages</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#about us">About Us</a>
+                    <a href="#contact us">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+ 
+        <div class="title">
+            <h1>TRIPMATE TRAVERSE</h1>
+            <p>Plan your trip with us and travel around the world with the most affordable packages!</p>
+            <a href="./register.html" class="button">Register Now!</a>
+        </div>
+        </div>
+    </div>
+
+<!-- Departing Soon Section -->
+<section class="bg-gray-50 py-12 pt-20" id="departing">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold text-teal-600">Departing Soon</h2>
+    <p class="text-gray-600 mt-3 text-lg">Hurry! Limited spots left for these amazing getaways</p>
+  </div>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 px-5">
+    <!-- Card 1 -->
+    <a href="#" class="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <img src="./files/A1.jpg" alt="Upcoming Trip 1" class="w-full h-full object-cover">
+    </a>
+
+    <!-- Card 2 -->
+    <a href="#" class="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <img src="./files/A2.jpg" alt="Upcoming Trip 2" class="w-full h-full object-cover">
+    </a>
+  </div>
+</section>
+
+<!-- Sliding Dates Section -->
+<div class="max-w-5xl mx-auto mt-10 px-5">
+  <h3 class="text-2xl md:text-3xl font-bold text-teal-600 mb-6 text-center">Available Dates</h3>
+
+  <div class="overflow-hidden relative py-4 ">
+    <div class="flex animate-scroll">
+      <!-- Card 1 Dates (Teal) -->
+      <div class="flex gap-4">
+        <div class="flex-shrink-0 bg-gradient-to-b from-teal-100 to-teal-200 shadow-lg rounded-2xl px-6 py-3 text-teal-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Nov 8
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-teal-100 to-teal-200 shadow-lg rounded-2xl px-6 py-3 text-teal-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Nov 22
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-teal-100 to-teal-200 shadow-lg rounded-2xl px-6 py-3 text-teal-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Dec 13
+        </div>
+
+        <!-- Card 2 Dates (Orange) -->
+        <div class="flex-shrink-0 bg-gradient-to-b from-orange-100 to-orange-200 shadow-lg rounded-2xl px-6 py-3 text-orange-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Dec 28
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-orange-100 to-orange-200 shadow-lg rounded-2xl px-6 py-3 text-orange-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Jan 10
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-orange-100 to-orange-200 shadow-lg rounded-2xl px-6 py-3 text-orange-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Jan 24
+        </div>
+      </div>
+
+      <!-- Duplicate all dates for seamless infinite loop -->
+      <div class="flex gap-4">
+        <div class="flex-shrink-0 bg-gradient-to-b from-teal-100 to-teal-200 shadow-lg rounded-2xl px-6 py-3 text-teal-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Feb 07
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-teal-100 to-teal-200 shadow-lg rounded-2xl px-6 py-3 text-teal-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Feb 21
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-teal-100 to-teal-200 shadow-lg rounded-2xl px-6 py-3 text-teal-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Nov 1
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-orange-100 to-orange-200 shadow-lg rounded-2xl px-6 py-3 text-orange-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Nov 15
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-orange-100 to-orange-200 shadow-lg rounded-2xl px-6 py-3 text-orange-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Dec 05
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-orange-100 to-orange-200 shadow-lg rounded-2xl px-6 py-3 text-orange-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Dec 20
+        </div>
+        <div class="flex-shrink-0 bg-gradient-to-b from-orange-100 to-orange-200 shadow-lg rounded-2xl px-6 py-3 text-orange-800 font-semibold cursor-pointer flex items-center gap-2 hover:scale-110 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Dec 27
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes scroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  display: flex;
+  gap: 1rem;
+  min-width: 200%; /* ensures continuous loop */
+  animation: scroll 20s linear infinite;
+}
+</style>
+
+<!-- Locations Section -->
+<section class="bg-gray-100 py-12 pt-20" id="locations">
+  <!-- Section Title -->
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold text-teal-600">Popular Locations</h2>
+    <p class="text-gray-600 mt-3 text-lg">Explore some of our most breathtaking destinations</p>
+  </div>
+
+  <!-- Locations Grid -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-5">
+
+    <!-- Rajasthan -->
+    <div class="location-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+      <div class="w-full aspect-[4/3] overflow-hidden">
+        <img src="./files/l1.png" alt="Rajasthan" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Rajasthan</h3>
+        <p class="text-gray-500">Experience the royal palaces and desert safaris</p>
+      </div>
+    </div>
+
+    <!-- South India -->
+    <div class="location-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+      <div class="w-full aspect-[4/3] overflow-hidden">
+        <img src="./files/l2.png" alt="South India" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2">South India</h3>
+        <p class="text-gray-500">Discover lush greenery and coastal beauty</p>
+      </div>
+    </div>
+
+    <!-- Himachal Pradesh -->
+    <div class="location-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+      <div class="w-full aspect-[4/3] overflow-hidden">
+        <img src="./files/l3.png" alt="Himachal Pradesh" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Himachal Pradesh</h3>
+        <p class="text-gray-500">Enjoy serene mountains and adventure sports</p>
+      </div>
+    </div>
+
+    <!-- Uttarakhand -->
+    <div class="location-card bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:scale-105">
+      <div class="w-full aspect-[4/3] overflow-hidden">
+        <img src="./files/l4.png" alt="Uttarakhand" class="w-full h-full object-cover">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Uttarakhand</h3>
+        <p class="text-gray-500">Explore spiritual places and Himalayan treks</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Packages -->
+
+<!-- Packages Section -->
+<section class="bg-gray-50 py-12 pt-20" id="package">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold text-teal-600">Travel Packages</h2>
+    <p class="text-gray-600 mt-3 text-lg">Choose perfect package for your dream trip</p>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 px-5">
+    <!-- Bronze Package -->
+    <a href="#" class="package-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <img src="./files/l1.1.png" alt="Bronze Package" class="w-full h-full object-cover">
+    </a>
+
+    <!-- Silver Package -->
+    <a href="#" class="package-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <img src="./files/l2.2.png" alt="Silver Package" class="w-full h-full object-cover">
+    </a>
+
+    <!-- Gold Package -->
+    <a href="#" class="package-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <img src="./files/l3.3.png" alt="Gold Package" class="w-full h-full object-cover">
+    </a>
+
+    <!-- Platinum Package -->
+    <a href="#" class="package-card rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition hover:scale-105">
+      <img src="./files/l4.4.png" alt="Platinum Package" class="w-full h-full object-cover">
+    </a>
+  </div>
+</section>
+
+<!-- Services -->
+
+<section class="bg-gray-100 py-20">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold text-teal-600">
+      Our Premium Services
+    </h2>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-5">
+    
+    <!-- Flight Services -->
+    <div class="bg-white rounded-2xl shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+      <img src="./files/1a.png" alt="Flight Services" class="w-full h-64 object-cover">
+      <div class="p-6 text-center">
+        <h4 class="text-2xl font-semibold text-gray-800 mb-2">Flight Services</h4>
+        <p class="text-gray-700">Arrival and Departure</p>
+      </div>
+    </div>
+
+    <!-- Food Services -->
+    <div class="bg-white rounded-2xl shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+      <img src="./files/2a.png" alt="Food Services" class="w-full h-64 object-cover">
+      <div class="p-6 text-center">
+        <h4 class="text-2xl font-semibold text-gray-800 mb-2">Food Services</h4>
+        <p class="text-gray-700">Catering</p>
+      </div>
+    </div>
+
+    <!-- Travel Services -->
+    <div class="bg-white rounded-2xl shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+      <img src="./files/3a.png" alt="Travel Services" class="w-full h-64 object-cover">
+      <div class="p-6 text-center">
+        <h4 class="text-2xl font-semibold text-gray-800 mb-2">Travel Services</h4>
+        <p class="text-gray-700">Pick-up / Drop</p>
+      </div>
+    </div>
+
+    <!-- Hotel Services -->
+    <div class="bg-white rounded-2xl shadow-md transform transition duration-500 hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+      <img src="./files/4a.png" alt="Hotel Services" class="w-full h-64 object-cover">
+      <div class="p-6 text-center">
+        <h4 class="text-2xl font-semibold text-gray-800 mb-2">Hotel Services</h4>
+        <p class="text-gray-700">Check-in / Out</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="bg-gray-50 py-12 pt-20" id="testimonials">
+  <div class="text-center mb-10">
+    <h2 class="text-4xl font-bold text-teal-600">What Our Customers Say</h2>
+    <p class="text-gray-600 mt-2">Real experiences from travelers like you</p>
+  </div>
+
+  <div class="overflow-hidden relative max-w-7xl mx-auto py-4">
+    <div id="testimonial-track" class="flex gap-8">
+      <!-- Repeat for 16 testimonials -->
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T1.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Amazing experience! Highly recommended."</p>
+        <h3 class="text-teal-600 font-semibold">— Harsh Soni</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T2.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Loved the trip, great service."</p>
+        <h3 class="text-teal-600 font-semibold">— Nirav Trevadiya</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T3.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"The guides were super friendly and knowledgeable."</p>
+        <h3 class="text-teal-600 font-semibold">—Kinjal Patel</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T4.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Unforgettable experience! Will come back again."</p>
+        <h3 class="text-teal-600 font-semibold">—Khushi Prajapati</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T5.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Excellent customer support and smooth booking process."</p>
+        <h3 class="text-teal-600 font-semibold">—Manthan Gada</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T6.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Beautiful destinations and well-organized itinerary."</p>
+        <h3 class="text-teal-600 font-semibold">—Abhishek Shah</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T7.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Very satisfied with the accommodations and food."</p>
+        <h3 class="text-teal-600 font-semibold">—Riken Gothi</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T8.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"A perfect blend of adventure and relaxation."</p>
+        <h3 class="text-teal-600 font-semibold">— Sagar Prajapati</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T9.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Staff went above and beyond to make our trip special."</p>
+        <h3 class="text-teal-600 font-semibold">— krinal Khakharia</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T10.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Highly professional and trustworthy travel agency."</p>
+        <h3 class="text-teal-600 font-semibold">— Raj Chopra</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T11.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Everything was perfect, from pickup to drop-off."</p>
+        <h3 class="text-teal-600 font-semibold">— Rohitt Sharma</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T12.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Exceeded my expectations in every way."</p>
+        <h3 class="text-teal-600 font-semibold">—Muskhan Darji</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T13.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Fantastic value for money and memorable experiences."</p>
+        <h3 class="text-teal-600 font-semibold">— Shubham Choudhary</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T14.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Friendly guides, safe travel, and amazing memories."</p>
+        <h3 class="text-teal-600 font-semibold">— Abbas Khan</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T15.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"Would recommend to friends and family without hesitation."</p>
+        <h3 class="text-teal-600 font-semibold">— Sameera Patil</h3>
+      </div>
+
+      <div class="flex-none w-64 text-center bg-white rounded-3xl p-6 shadow-lg">
+        <img src="./files/T16.jpg" class="w-full h-40 object-cover mb-4 rounded-xl">
+        <p class="text-gray-700 mb-2">"A truly seamless and enjoyable travel experience."</p>
+        <h3 class="text-teal-600 font-semibold">— Heenaa Khan
+        </h3>
+      </div>
+
+      <!-- Add remaining T3 to T16 in the same format -->
+    </div>
+  </div>
+</section>
+
+<style>
+/* Duplicate the track for infinite scrolling */
+#testimonial-track {
+  display: flex;
+  gap: 2rem;
+  animation: slide 25s linear infinite; /* faster scroll */
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* slide half content */
+}
+</style>
+
+<!-- Boxicons CDN -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<footer class="footer bg-teal-800 text-white">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <!-- Brand -->
+    <div class="text-center md:text-left">
+      <h2 class="text-xl font-bold tracking-wide">Tripmate Traverse</h2>
+      <p class="text-gray-200 text-sm mt-1">
+        Explore the world with unforgettable journeys.
+      </p>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-4">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/tripmate_traverse/"
+         target="_blank"
+         class="flex items-center justify-center w-9 h-9 bg-white text-pink-500 rounded-full shadow hover:bg-pink-500 hover:text-white transition duration-300">
+         <i class="bx bxl-instagram text-xl"></i>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=61557114510585"
+         target="_blank"
+         class="flex items-center justify-center w-9 h-9 bg-white text-blue-600 rounded-full shadow hover:bg-blue-600 hover:text-white transition duration-300">
+         <i class="bx bxl-facebook text-xl"></i>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/918779857338"
+         target="_blank"
+         class="flex items-center justify-center w-9 h-9 bg-white text-green-500 rounded-full shadow hover:bg-green-500 hover:text-white transition duration-300">
+         <i class="bx bxl-whatsapp text-xl"></i>
+      </a>
+      <!-- Gmail -->
+      <a href="mailto:thetripmate09@gmail.com"
+         target="_blank"
+         class="flex items-center justify-center w-9 h-9 bg-white text-red-500 rounded-full shadow hover:bg-red-500 hover:text-white transition duration-300">
+         <i class="bx bxl-gmail text-xl"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="bg-teal-900 text-center py-2 text-xs text-gray-300">
+    © 2025 Tripmate Traverse. All Rights Reserved.
+  </div>
+</footer>
+
+
+ 
+</body>
+</html>
